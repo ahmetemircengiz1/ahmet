@@ -131,9 +131,10 @@ def find_trades(proj: pd.DataFrame, rosters_ids: dict, league: dict, me: str, we
 
 
 def free_agents(proj: pd.DataFrame, rosters_ids: dict, league: dict, me: str, week: int,
-                league_avg: dict, top_n: int = 10) -> pd.DataFrame:
+                league_avg: dict, top_n: int = 10, active_ids: dict | None = None) -> pd.DataFrame:
     owned = {p for ids in rosters_ids.values() for p in ids}
     fa = proj[(~proj.index.isin(owned)) & (proj["gp"] >= 2)]
+    rosters_ids = active_ids or rosters_ids
     arrays = {t: TeamArrays(proj, ids, league_avg) for t, ids in rosters_ids.items()}
     opp_mom = {t: moments(a.ex, a.vx, a.val) for t, a in arrays.items()}
     me_a = arrays[me]
@@ -150,7 +151,7 @@ def free_agents(proj: pd.DataFrame, rosters_ids: dict, league: dict, me: str, we
             if g > best[1]:
                 best = (proj.loc[me_a.ids[i], "name_fantasy"], g)
         if best[0]:
-            rows.append({"player": proj.loc[pid, "name"], "team": proj.loc[pid, "team"],
+            rows.append({"player": proj.loc[pid, "name_fantasy"], "team": proj.loc[pid, "team"],
                          "drop": best[0], "my_gain_season_pts": round(best[1], 2),
                          "pts": round(proj.loc[pid, "pts_mu"], 1), "reb": round(proj.loc[pid, "reb_mu"], 1),
                          "ast": round(proj.loc[pid, "ast_mu"], 1), "min": round(proj.loc[pid, "min_proj"], 1)})

@@ -20,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import model  # noqa: E402
 import optimize  # noqa: E402
 import trade  # noqa: E402
-from names import build_matcher  # noqa: E402
+from names import build_matcher, pretty  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA, REPORTS = ROOT / "data", ROOT / "reports"
@@ -37,11 +37,15 @@ def load(season: int, prior: int, offline: bool):
     box = pd.read_csv(DATA / f"boxscores_{season}.csv")
     pp = DATA / f"boxscores_{prior}.csv"
     prior_box = pd.read_csv(pp) if pp.exists() else box.iloc[0:0]
+    for b in (box, prior_box):
+        b["player_id"] = b["player_id"].astype(str).str.strip()
     return model.Context(box=box, prior=prior_box, games=games)
 
 
 def match_rosters(ctx, league):
-    names = ctx.box.sort_values("round").groupby("player_id")["player_raw"].last().to_dict()
+    names = ctx.prior.sort_values("round").groupby("player_id")["player_raw"].last().to_dict() if len(ctx.prior) else {}
+    names.update(ctx.box.sort_values("round").groupby("player_id")["player_raw"].last().to_dict())
+    this_season = set(ctx.box["player_id"])
     match = build_matcher(names)
     rosters_ids, report = {}, []
     for team, plist in league["rosters"].items():
@@ -49,7 +53,8 @@ def match_rosters(ctx, league):
         for n in plist:
             pid, score = match(n)
             report.append({"team": team, "fantasy_name": n, "player_id": pid,
-                           "boxscore_name": names.get(pid), "score": round(score, 2)})
+                           "boxscore_name": names.get(pid), "score": round(score, 2),
+                           "this_season": pid in this_season})
             if pid:
                 ids.append(pid)
         rosters_ids[team] = ids
@@ -61,7 +66,7 @@ def match_rosters(ctx, league):
 def attach_fantasy_names(proj, rep):
     m = rep.dropna(subset=["player_id"]).set_index("player_id")["fantasy_name"]
     proj = proj.copy()
-    proj["name_fantasy"] = [m.get(i, n) for i, n in zip(proj.index, proj["name"])]
+    proj["name_fantasy"] = [m.get(i, pretty(n)) for i, n in zip(proj.index, proj["name"])]
     return proj
 
 
@@ -148,10 +153,11 @@ def main():
                                  "kazanc_puan": round(r["booster_best"]["gain"], 3),
                                  "booster_siz_beklenen": round(r["result"]["exp_points"], 2)})
 
-    trades = trade.find_trades(model.project_generic(ctx).pipe(attach_fantasy_names, rep),
-                               rosters_ids, league, me, week, league_avg)
-    fas = trade.free_agents(model.project_generic(ctx).pipe(attach_fantasy_names, rep),
-                            rosters_ids, league, me, week, league_avg)
+    gen = model.project_generic(ctx).pipe(attach_fantasy_names, rep)
+    active_ids = {t: [i for i in ids if i in gen.index] for t, ids in rosters_ids.items()}
+    trades = trade.find_trades(gen, active_ids, league, me, week, league_avg)
+    # sahibi olan ama bu sezon oynamamış oyuncular da serbest sayılmasın
+    fas = trade.free_agents(gen, rosters_ids, league, me, week, league_avg, active_ids=active_ids)
 
     write_report(week, me, opp, res, proj, booster_plan, trades, fas, rep, rosters_ids, cycle_key)
 
@@ -220,6 +226,11 @@ def write_report(week, me, opp, res, proj, booster_plan, trades, fas, rep, roste
         L.append("\n## İsim eşleştirme uyarıları\n")
         for _, m in miss.iterrows():
             L.append(f"- Bulunamadı: {m['fantasy_name']} ({m['team']})")
+    idle = rep[rep["player_id"].notna() & ~rep["this_season"].astype(bool)]
+    if len(idle):
+        L.append("\n## Bu sezon hiç forma giymeyenler (sakat / kadro dışı)\n")
+        for _, m in idle.iterrows():
+            L.append(f"- {m['fantasy_name']} ({m['team']})")
         for _, m in low.iterrows():
             L.append(f"- Kontrol et: {m['fantasy_name']} → {m['boxscore_name']} ({m['score']})")
 

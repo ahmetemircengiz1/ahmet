@@ -80,6 +80,32 @@ def fetch_games(season: int) -> pd.DataFrame:
     cols = {k: v for k, v in keep.items() if k in df.columns}
     out = df[list(cols)].rename(columns=cols)
     out["season"] = season
+    # Sonuç uç noktası sadece oynanmış maçları veriyor; gelecek turlar için fikstürü ekle
+    try:
+        fut = fetch_schedule(season)
+        fut = fut[~fut["game_code"].isin(out["game_code"])]
+        out = pd.concat([out, fut], ignore_index=True)
+    except Exception as e:
+        print(f"  ! fikstür alınamadı: {e}", file=sys.stderr)
+    return out.sort_values(["round", "game_code"]).reset_index(drop=True)
+
+
+def fetch_schedule(season: int) -> pd.DataFrame:
+    from euroleague_api.schedule import Schedule
+    df = Schedule("E").get_schedule(season)
+    (DATA / "schedule_columns.txt").write_text(", ".join(map(str, df.columns)))
+    code_col = next(c for c in ["gamecode", "game", "gameCode"] if c in df.columns)
+    out = pd.DataFrame({
+        "round": df["gameday"].astype(int),
+        "game_code": df[code_col].astype(str).str.extract(r"(\d+)$")[0].astype(int),
+        "home": df["homecode"],
+        "away": df["awaycode"],
+        "home_name": df.get("hometeam"),
+        "away_name": df.get("awayteam"),
+        "date": df.get("date"),
+        "played": df["played"].astype(str).str.lower().eq("true") if "played" in df.columns else False,
+    })
+    out["season"] = season
     return out
 
 
@@ -90,6 +116,7 @@ def fetch_boxscore(season: int, game_code: int) -> pd.DataFrame:
     df = raw[list(cols)].rename(columns=cols)
     df["home"] = raw["Home"].values
     df["minutes"] = df["minutes_raw"].map(minutes_to_float)
+    df["player_id"] = df["player_id"].astype(str).str.strip()
     df["season"] = season
     df["game_code"] = game_code
     for c in ["pts", "reb", "ast", "pir", "stl", "tov", "blk", "oreb", "dreb", "fga2", "fga3", "fta"]:

@@ -51,3 +51,12 @@ def build_matcher(boxscore_names: dict[str, str]):
         return None, 0.0
 
     return match
+
+
+def pretty(raw: str) -> str:
+    """'JAMES, MIKE' -> 'Mike James'"""
+    s = str(raw)
+    if "," in s:
+        last, first = s.split(",", 1)
+        s = f"{first.strip()} {last.strip()}"
+    return " ".join(w.capitalize() if w.isupper() else w for w in s.split())

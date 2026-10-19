@@ -1024,6 +1024,9 @@
   "H23-31": "kilitli"
  },
  "human_factors": {
-  "note": "Gizli: GitHub secret HUMAN_FACTORS ve yerel data/human_factors.json içinde tutulur"
+  "no_trade_partners": [
+   "Kerem"
+  ],
+  "note": "Diğer kişisel notlar gizli: GitHub secret HUMAN_FACTORS / yerel data/human_factors.json"
  }
 }
