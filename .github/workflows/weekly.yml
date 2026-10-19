@@ -1,0 +1,45 @@
+name: Haftalik fantasy raporu
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Pazartesi 09:00 (TR) - hafta başı dizilim önerisi
+    - cron: "0 6 * * 6"   # Cumartesi 09:00 (TR) - free dönemi öncesi güncel veri
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Hafta (boş = sıradaki tur)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Insani faktorler (gizli)
+        env:
+          HUMAN_FACTORS: ${{ secrets.HUMAN_FACTORS }}
+        run: |
+          if [ -n "$HUMAN_FACTORS" ]; then echo "$HUMAN_FACTORS" > data/human_factors.json; fi
+      - name: Veri cek ve rapor uret
+        run: |
+          if [ -n "${{ github.event.inputs.week }}" ]; then
+            python src/run_weekly.py --week ${{ github.event.inputs.week }}
+          else
+            python src/run_weekly.py
+          fi
+      - name: Sonuclari kaydet
+        run: |
+          git config user.name "fantasy-bot"
+          git config user.email "fantasy-bot@users.noreply.github.com"
+          git add data reports
+          git diff --cached --quiet || git commit -m "Haftalik veri ve rapor"
+          git push

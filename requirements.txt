@@ -1,0 +1,6 @@
+euroleague-api>=0.1.1
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+requests>=2.31
+xmltodict>=0.13

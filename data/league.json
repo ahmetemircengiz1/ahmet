@@ -1,0 +1,1042 @@
+{
+ "league": "EuroLeague Fantasy (arkadaş ligi)",
+ "season": "2026-27",
+ "current_week": 7,
+ "rules": {
+  "roster_size": 13,
+  "reserve_per_week": 1,
+  "active_players": 12,
+  "starters": 5,
+  "captain_multiplier": 3,
+  "starter_multiplier": 2,
+  "bench_multiplier": 1,
+  "categories": [
+   "PTS",
+   "REB",
+   "AST"
+  ],
+  "category_tiebreak": "Kategori berabere ise PIR toplamı yüksek olan alır; PIR de aynı çarpanlarla hesaplanır (kaptan x3, ilk5 x2, bench x1)",
+  "match_points": "Kazanılan kategori sayısı kadar puan (2-1 -> 2/1, 3-0 -> 3/0)",
+  "double_round_weeks": "EuroLeague çift maçlı haftada her tur ayrı fantasy haftası/eşleşme sayılır",
+  "sixth_man": "Garanti: sadece kaptan o hafta oynamazsa devreye girer (kaptanın yerini alır). Kaptan oynarsa 6. adam normal bench gibi x1 sayılır.",
+  "booster": "X1 booster: ilk 5'teki bir oyuncunun çarpanını +1 artırır (kaptan x3->x4, ilk5 x2->x3). Her fikstür döngüsünde 1 kez: H1-11, H12-22, H23-31.",
+  "trades": "Arkadaşlar arası, verilen oyuncu sayısı = alınan oyuncu sayısı",
+  "free_agency": "Her Cumartesi-Pazar, krediyle açık artırma; süre sonunda en yüksek teklif alır (kredi miktarı/kazanımı: SORULACAK)",
+  "season_structure": {
+   "regular": "H1-H31 (11-11-9 döngü)",
+   "play_in": "H32: lig 7-10. sıraları, kazanan 2 takım playoffa",
+   "direct_playoff": "İlk 6 direkt playoff",
+   "playoff": "H33-34 1. tur, H35-36 yarı final, H37-38 final; her tur 2 haftanın statları toplanıp karşılaştırılır"
+  }
+ },
+ "my_team": "Ahmet",
+ "my_lineup_last_set": {
+  "captain": "Dwayne Bacon",
+  "starters": [
+   "Dwayne Bacon",
+   "Nigel Hayes-Davis",
+   "Nikola Milutinov",
+   "O'Shae Brissett",
+   "Lamar Stevens"
+  ],
+  "sixth_man": "Austin Wiley",
+  "reserve": "Umoja Gibson"
+ },
+ "rosters": {
+  "Ahmet": [
+   "Dwayne Bacon",
+   "Nigel Hayes-Davis",
+   "Kevin Punter",
+   "Jean Montero",
+   "Nikola Milutinov",
+   "Marjon Beauchamp",
+   "Bonzie Colson",
+   "O'Shae Brissett",
+   "Austin Wiley",
+   "Garrison Mathews",
+   "Umoja Gibson",
+   "Lamar Stevens",
+   "Kevarrius Hayes"
+  ],
+  "Kuzey": [
+   "Kendrick Nunn",
+   "Cameron Payne",
+   "Justin Robinson",
+   "Facundo Campazzo",
+   "Matthew Strazel",
+   "Jae Crowder",
+   "Iffe Lundberg",
+   "Sterling Brown",
+   "DJ Stewart",
+   "RJ Cole",
+   "Ethan Thompson",
+   "Nick Smith Jr",
+   "Damion Baugh"
+  ],
+  "Gencay": [
+   "Jordan Nwora",
+   "Carsen Edwards",
+   "Chima Moneke",
+   "AJ Lawson",
+   "Jared Butler",
+   "Zach LeDay",
+   "Yam Madar",
+   "Chris Jones",
+   "Patty Mills",
+   "Devon Hall",
+   "Wendell Moore",
+   "Aliou Diarra",
+   "Tadas Sedekerskis"
+  ],
+  "Kerem": [
+   "Elijah Bryant",
+   "Vasilije Micic",
+   "Dan Oturu",
+   "Alec Peters",
+   "Marcus Carr",
+   "Walter Tavares",
+   "Daniel Theis",
+   "Trent Frazier",
+   "Rodions Kurucs",
+   "Will Clyburn",
+   "Isaac Bonga",
+   "Tosan Evbuomwan",
+   "Marius Grigonis"
+  ],
+  "Efe Sarp": [
+   "Codi Miller-McIntyre",
+   "Mathias Lessort",
+   "Mfiondu Kabengele",
+   "Tremont Waters",
+   "Braxton Key",
+   "Lonnie Walker",
+   "Hugo Besson",
+   "Anthony Brown",
+   "Antonio Blakeney",
+   "Mbaye Ndiaye",
+   "Jared Rhoden",
+   "Allan Dokossi",
+   "Mamadi Diakite"
+  ],
+  "Hamza": [
+   "Dario Saric",
+   "Elie Okobo",
+   "Tyson Etienne",
+   "TJ Warren",
+   "Johannes Thiemann",
+   "Eugene Omoruyi",
+   "Nigel Williams-Goss",
+   "Andres Feliz",
+   "Jaime Pradilla",
+   "Amir Coffey",
+   "Semi Ojeleye",
+   "Christian Koloko",
+   "Rokas Jokubaitis"
+  ],
+  "Fatih": [
+   "TJ Shorts",
+   "Sylvain Francisco",
+   "Nadir Hifi",
+   "Theo Maledon",
+   "Kameron Taylor",
+   "Nikola Mirotic",
+   "Armoni Brooks",
+   "Guerschon Yabusele",
+   "Juancho Hernangomez",
+   "Kostas Sloukas",
+   "Tyrique Jones",
+   "Mouhamet Diouf",
+   "Conor Morgan"
+  ],
+  "Gürdal": [
+   "Moses Wright",
+   "Carlik Jones",
+   "Shavon Shields",
+   "Tyson Carter",
+   "Joel Parra",
+   "Tyrese Martin",
+   "Tyson Ward",
+   "Aleksander Balcerowski",
+   "Leandro Bolmaro",
+   "Bo Klintman",
+   "Alessandro Pajola",
+   "Nikola Tanaskovic",
+   "Mouhamed Faye"
+  ],
+  "Kemal": [
+   "Talen Horton-Tucker",
+   "McKinley Wright IV",
+   "Jaylen Hoard",
+   "Marko Guduric",
+   "Jimmy Clark III",
+   "Scottie Wilbekin",
+   "Marcus Bingham",
+   "Nick Weiler-Babb",
+   "Nicolo Melli",
+   "Ante Zizic",
+   "Jerian Grant",
+   "Joel Bolomboy",
+   "Devin Booker"
+  ],
+  "Mali": [
+   "Wade Baldwin IV",
+   "Both Gach",
+   "Timothe Luwawu-Cabarrot",
+   "Evan Fournier",
+   "Tonye Jekiri",
+   "Brancou Badio",
+   "Saben Lee",
+   "Tyler Dorsey",
+   "Trent Forrest",
+   "Keaton Wallace",
+   "Tomas Satoransky",
+   "Luca Vildoza",
+   "David DeJulius"
+  ],
+  "Ege": [
+   "Jonas Valanciunas",
+   "Azuolas Tubelis",
+   "Dzanan Musa",
+   "Chris Duarte",
+   "Derrick Alston Jr",
+   "Tyty Washington",
+   "Filip Petrusev",
+   "Kenneth Faried",
+   "Collin Malcolm",
+   "Jacob Toppin",
+   "Stanley Umude",
+   "Andreas Obst",
+   "Bruno Fernando"
+  ],
+  "Burak-Altay": [
+   "Sasha Vezenkov",
+   "Roman Sorkin",
+   "Jaylen Nowell",
+   "Duane Washington",
+   "Jordan Loyd",
+   "Devon Dotson",
+   "Josh Nebo",
+   "Wenyen Gabriel",
+   "Kessler Edwards",
+   "Shane Larkin",
+   "Ebuka Izundu",
+   "Kobi Simmons",
+   "Georgios Papagiannis"
+  ]
+ },
+ "fixtures": {
+  "7": [
+   [
+    "Efe Sarp",
+    "Burak-Altay"
+   ],
+   [
+    "Ege",
+    "Kuzey"
+   ],
+   [
+    "Gencay",
+    "Gürdal"
+   ],
+   [
+    "Kerem",
+    "Ahmet"
+   ],
+   [
+    "Kemal",
+    "Fatih"
+   ],
+   [
+    "Mali",
+    "Hamza"
+   ]
+  ],
+  "8": [
+   [
+    "Efe Sarp",
+    "Kuzey"
+   ],
+   [
+    "Burak-Altay",
+    "Gürdal"
+   ],
+   [
+    "Ege",
+    "Ahmet"
+   ],
+   [
+    "Gencay",
+    "Fatih"
+   ],
+   [
+    "Kerem",
+    "Hamza"
+   ],
+   [
+    "Kemal",
+    "Mali"
+   ]
+  ],
+  "9": [
+   [
+    "Efe Sarp",
+    "Gürdal"
+   ],
+   [
+    "Kuzey",
+    "Ahmet"
+   ],
+   [
+    "Burak-Altay",
+    "Fatih"
+   ],
+   [
+    "Ege",
+    "Hamza"
+   ],
+   [
+    "Gencay",
+    "Mali"
+   ],
+   [
+    "Kerem",
+    "Kemal"
+   ]
+  ],
+  "10": [
+   [
+    "Efe Sarp",
+    "Ahmet"
+   ],
+   [
+    "Gürdal",
+    "Fatih"
+   ],
+   [
+    "Kuzey",
+    "Hamza"
+   ],
+   [
+    "Burak-Altay",
+    "Mali"
+   ],
+   [
+    "Ege",
+    "Kemal"
+   ],
+   [
+    "Gencay",
+    "Kerem"
+   ]
+  ],
+  "11": [
+   [
+    "Efe Sarp",
+    "Fatih"
+   ],
+   [
+    "Ahmet",
+    "Hamza"
+   ],
+   [
+    "Gürdal",
+    "Mali"
+   ],
+   [
+    "Kuzey",
+    "Kemal"
+   ],
+   [
+    "Burak-Altay",
+    "Kerem"
+   ],
+   [
+    "Ege",
+    "Gencay"
+   ]
+  ],
+  "12": [
+   [
+    "Efe Sarp",
+    "Hamza"
+   ],
+   [
+    "Fatih",
+    "Mali"
+   ],
+   [
+    "Ahmet",
+    "Kemal"
+   ],
+   [
+    "Gürdal",
+    "Kerem"
+   ],
+   [
+    "Kuzey",
+    "Gencay"
+   ],
+   [
+    "Burak-Altay",
+    "Ege"
+   ]
+  ],
+  "13": [
+   [
+    "Efe Sarp",
+    "Mali"
+   ],
+   [
+    "Hamza",
+    "Kemal"
+   ],
+   [
+    "Fatih",
+    "Kerem"
+   ],
+   [
+    "Ahmet",
+    "Gencay"
+   ],
+   [
+    "Gürdal",
+    "Ege"
+   ],
+   [
+    "Kuzey",
+    "Burak-Altay"
+   ]
+  ],
+  "14": [
+   [
+    "Efe Sarp",
+    "Kemal"
+   ],
+   [
+    "Mali",
+    "Kerem"
+   ],
+   [
+    "Hamza",
+    "Gencay"
+   ],
+   [
+    "Fatih",
+    "Ege"
+   ],
+   [
+    "Ahmet",
+    "Burak-Altay"
+   ],
+   [
+    "Gürdal",
+    "Kuzey"
+   ]
+  ],
+  "15": [
+   [
+    "Efe Sarp",
+    "Kerem"
+   ],
+   [
+    "Kemal",
+    "Gencay"
+   ],
+   [
+    "Mali",
+    "Ege"
+   ],
+   [
+    "Hamza",
+    "Burak-Altay"
+   ],
+   [
+    "Fatih",
+    "Kuzey"
+   ],
+   [
+    "Ahmet",
+    "Gürdal"
+   ]
+  ],
+  "16": [
+   [
+    "Efe Sarp",
+    "Gencay"
+   ],
+   [
+    "Kerem",
+    "Ege"
+   ],
+   [
+    "Kemal",
+    "Burak-Altay"
+   ],
+   [
+    "Mali",
+    "Kuzey"
+   ],
+   [
+    "Hamza",
+    "Gürdal"
+   ],
+   [
+    "Fatih",
+    "Ahmet"
+   ]
+  ],
+  "17": [
+   [
+    "Efe Sarp",
+    "Ege"
+   ],
+   [
+    "Gencay",
+    "Burak-Altay"
+   ],
+   [
+    "Kerem",
+    "Kuzey"
+   ],
+   [
+    "Kemal",
+    "Gürdal"
+   ],
+   [
+    "Mali",
+    "Ahmet"
+   ],
+   [
+    "Hamza",
+    "Fatih"
+   ]
+  ],
+  "18": [
+   [
+    "Efe Sarp",
+    "Burak-Altay"
+   ],
+   [
+    "Ege",
+    "Kuzey"
+   ],
+   [
+    "Gencay",
+    "Gürdal"
+   ],
+   [
+    "Kerem",
+    "Ahmet"
+   ],
+   [
+    "Kemal",
+    "Fatih"
+   ],
+   [
+    "Mali",
+    "Hamza"
+   ]
+  ],
+  "19": [
+   [
+    "Efe Sarp",
+    "Kuzey"
+   ],
+   [
+    "Burak-Altay",
+    "Gürdal"
+   ],
+   [
+    "Ege",
+    "Ahmet"
+   ],
+   [
+    "Gencay",
+    "Fatih"
+   ],
+   [
+    "Kerem",
+    "Hamza"
+   ],
+   [
+    "Kemal",
+    "Mali"
+   ]
+  ],
+  "20": [
+   [
+    "Efe Sarp",
+    "Gürdal"
+   ],
+   [
+    "Kuzey",
+    "Ahmet"
+   ],
+   [
+    "Burak-Altay",
+    "Fatih"
+   ],
+   [
+    "Ege",
+    "Hamza"
+   ],
+   [
+    "Gencay",
+    "Mali"
+   ],
+   [
+    "Kerem",
+    "Kemal"
+   ]
+  ],
+  "21": [
+   [
+    "Efe Sarp",
+    "Ahmet"
+   ],
+   [
+    "Gürdal",
+    "Fatih"
+   ],
+   [
+    "Kuzey",
+    "Hamza"
+   ],
+   [
+    "Burak-Altay",
+    "Mali"
+   ],
+   [
+    "Ege",
+    "Kemal"
+   ],
+   [
+    "Gencay",
+    "Kerem"
+   ]
+  ],
+  "22": [
+   [
+    "Efe Sarp",
+    "Fatih"
+   ],
+   [
+    "Ahmet",
+    "Hamza"
+   ],
+   [
+    "Gürdal",
+    "Mali"
+   ],
+   [
+    "Kuzey",
+    "Kemal"
+   ],
+   [
+    "Burak-Altay",
+    "Kerem"
+   ],
+   [
+    "Ege",
+    "Gencay"
+   ]
+  ],
+  "23": [
+   [
+    "Efe Sarp",
+    "Hamza"
+   ],
+   [
+    "Fatih",
+    "Mali"
+   ],
+   [
+    "Ahmet",
+    "Kemal"
+   ],
+   [
+    "Gürdal",
+    "Kerem"
+   ],
+   [
+    "Kuzey",
+    "Gencay"
+   ],
+   [
+    "Burak-Altay",
+    "Ege"
+   ]
+  ],
+  "24": [
+   [
+    "Efe Sarp",
+    "Mali"
+   ],
+   [
+    "Hamza",
+    "Kemal"
+   ],
+   [
+    "Fatih",
+    "Kerem"
+   ],
+   [
+    "Ahmet",
+    "Gencay"
+   ],
+   [
+    "Gürdal",
+    "Ege"
+   ],
+   [
+    "Kuzey",
+    "Burak-Altay"
+   ]
+  ],
+  "25": [
+   [
+    "Efe Sarp",
+    "Kemal"
+   ],
+   [
+    "Mali",
+    "Kerem"
+   ],
+   [
+    "Hamza",
+    "Gencay"
+   ],
+   [
+    "Fatih",
+    "Ege"
+   ],
+   [
+    "Ahmet",
+    "Burak-Altay"
+   ],
+   [
+    "Gürdal",
+    "Kuzey"
+   ]
+  ],
+  "26": [
+   [
+    "Efe Sarp",
+    "Kerem"
+   ],
+   [
+    "Kemal",
+    "Gencay"
+   ],
+   [
+    "Mali",
+    "Ege"
+   ],
+   [
+    "Hamza",
+    "Burak-Altay"
+   ],
+   [
+    "Fatih",
+    "Kuzey"
+   ],
+   [
+    "Ahmet",
+    "Gürdal"
+   ]
+  ],
+  "27": [
+   [
+    "Efe Sarp",
+    "Gencay"
+   ],
+   [
+    "Kerem",
+    "Ege"
+   ],
+   [
+    "Kemal",
+    "Burak-Altay"
+   ],
+   [
+    "Mali",
+    "Kuzey"
+   ],
+   [
+    "Hamza",
+    "Gürdal"
+   ],
+   [
+    "Fatih",
+    "Ahmet"
+   ]
+  ],
+  "28": [
+   [
+    "Efe Sarp",
+    "Ege"
+   ],
+   [
+    "Gencay",
+    "Burak-Altay"
+   ],
+   [
+    "Kerem",
+    "Kuzey"
+   ],
+   [
+    "Kemal",
+    "Gürdal"
+   ],
+   [
+    "Mali",
+    "Ahmet"
+   ],
+   [
+    "Hamza",
+    "Fatih"
+   ]
+  ],
+  "29": [
+   [
+    "Efe Sarp",
+    "Burak-Altay"
+   ],
+   [
+    "Ege",
+    "Kuzey"
+   ],
+   [
+    "Gencay",
+    "Gürdal"
+   ],
+   [
+    "Kerem",
+    "Ahmet"
+   ],
+   [
+    "Kemal",
+    "Fatih"
+   ],
+   [
+    "Mali",
+    "Hamza"
+   ]
+  ],
+  "30": [
+   [
+    "Efe Sarp",
+    "Kuzey"
+   ],
+   [
+    "Burak-Altay",
+    "Gürdal"
+   ],
+   [
+    "Ege",
+    "Ahmet"
+   ],
+   [
+    "Gencay",
+    "Fatih"
+   ],
+   [
+    "Kerem",
+    "Hamza"
+   ],
+   [
+    "Kemal",
+    "Mali"
+   ]
+  ],
+  "31": [
+   [
+    "Efe Sarp",
+    "Gürdal"
+   ],
+   [
+    "Kuzey",
+    "Ahmet"
+   ],
+   [
+    "Burak-Altay",
+    "Fatih"
+   ],
+   [
+    "Ege",
+    "Hamza"
+   ],
+   [
+    "Gencay",
+    "Mali"
+   ],
+   [
+    "Kerem",
+    "Kemal"
+   ]
+  ]
+ },
+ "human_factors": {
+  "no_trade_partners": [
+   "Kerem"
+  ],
+  "premium_partners": {
+   "Gürdal": "aç gözlü, değerinden fazlasını ister",
+   "Ege": "aç gözlü, değerinden fazlasını ister"
+  },
+  "premium_factor": {
+   "Gürdal": 1.15,
+   "Ege": 1.15
+  },
+  "default_partners": "Diğerleriyle normal takas yapılabilir",
+  "untradeable_players": {},
+  "notes": []
+ },
+ "fixture_note": "11 haftalık round-robin döngüsü; H23-H31 ekran görüntüleriyle kontrol edildi",
+ "standings_after_week6": [
+  {
+   "team": "Fatih",
+   "W": 5,
+   "L": 1,
+   "P": 13
+  },
+  {
+   "team": "Gencay",
+   "W": 5,
+   "L": 1,
+   "P": 13
+  },
+  {
+   "team": "Kuzey",
+   "W": 4,
+   "L": 2,
+   "P": 10
+  },
+  {
+   "team": "Kemal",
+   "W": 3,
+   "L": 3,
+   "P": 10
+  },
+  {
+   "team": "Hamza",
+   "W": 3,
+   "L": 3,
+   "P": 10
+  },
+  {
+   "team": "Gürdal",
+   "W": 3,
+   "L": 3,
+   "P": 10
+  },
+  {
+   "team": "Ege",
+   "W": 4,
+   "L": 2,
+   "P": 9
+  },
+  {
+   "team": "Burak-Altay",
+   "W": 2,
+   "L": 4,
+   "P": 9
+  },
+  {
+   "team": "Kerem",
+   "W": 2,
+   "L": 4,
+   "P": 9
+  },
+  {
+   "team": "Efe Sarp",
+   "W": 3,
+   "L": 3,
+   "P": 8
+  },
+  {
+   "team": "Ahmet",
+   "W": 2,
+   "L": 4,
+   "P": 5
+  },
+  {
+   "team": "Mali",
+   "W": 0,
+   "L": 6,
+   "P": 3
+  }
+ ],
+ "team_averages_after_week6": {
+  "Gencay": [
+   219.7,
+   68.2,
+   36.5
+  ],
+  "Hamza": [
+   208.8,
+   53.3,
+   44.3
+  ],
+  "Kuzey": [
+   205.2,
+   33.0,
+   58.2
+  ],
+  "Fatih": [
+   204.8,
+   50.7,
+   58.2
+  ],
+  "Burak-Altay": [
+   179.2,
+   50.8,
+   28.5
+  ],
+  "Ahmet": [
+   174.2,
+   55.7,
+   27.5
+  ],
+  "Kerem": [
+   173.7,
+   71.3,
+   42.8
+  ],
+  "Gürdal": [
+   161.8,
+   61.0,
+   37.0
+  ],
+  "Kemal": [
+   160.2,
+   60.3,
+   38.3
+  ],
+  "Efe Sarp": [
+   152.7,
+   64.2,
+   37.0
+  ],
+  "Ege": [
+   148.8,
+   68.8,
+   28.7
+  ],
+  "Mali": [
+   140.7,
+   46.5,
+   37.7
+  ]
+ },
+ "team_averages_columns": [
+  "PTS",
+  "REB",
+  "AST"
+ ],
+ "booster_status": {
+  "H1-11": "kullanılmadı (H11 sonuna kadar kullanılmalı)",
+  "H12-22": "kilitli",
+  "H23-31": "kilitli"
+ }
+}
