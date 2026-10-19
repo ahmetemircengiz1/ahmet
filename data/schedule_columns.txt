@@ -1,0 +1,1 @@
+gameday, round, arenacode, arenaname, arenacapacity, date, startime, endtime, group, game, gamecode, hometeam, homecode, hometv, awayteam, awaycode, awaytv, confirmeddate, confirmedtime, played

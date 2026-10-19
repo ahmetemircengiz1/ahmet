@@ -2,106 +2,70 @@
  "week": 7,
  "opponent": "Kerem",
  "lineup": {
-  "kaptan": "Nigel Hayes-Davis",
+  "kaptan": "Jean Montero",
   "ilk5": [
+   "Dwayne Bacon",
    "Nigel Hayes-Davis",
    "Kevin Punter",
    "Jean Montero",
-   "Nikola Milutinov",
-   "Marjon Beauchamp"
+   "Umoja Gibson"
   ],
-  "6_adam": "Bonzie Colson",
-  "rezerv": "Dwayne Bacon"
+  "6_adam": "O'Shae Brissett",
+  "rezerv": "Nikola Milutinov"
  },
  "result": {
-  "exp_points": 0.0,
-  "win_prob": 0.0,
+  "exp_points": 1.131,
+  "win_prob": 0.30966666666666665,
   "cat_probs": {
-   "pts": 0.0,
-   "reb": 0.0,
-   "ast": 0.0
+   "pts": 0.648,
+   "reb": 0.162,
+   "ast": 0.321
   },
   "dist": {
-   "0": 1.0,
-   "1": 0.0,
-   "2": 0.0,
-   "3": 0.0
+   "0": 0.22,
+   "1": 0.4703333333333333,
+   "2": 0.2683333333333333,
+   "3": 0.04133333333333333
   }
  },
  "booster_plan": [
   {
    "hafta": 7,
    "rakip": "Kerem",
-   "booster_oyuncu": "Nigel Hayes-Davis",
-   "kazanc_puan": 0.0,
-   "booster_siz_beklenen": 0.0
+   "booster_oyuncu": "Jean Montero",
+   "kazanc_puan": 0.278,
+   "booster_siz_beklenen": 1.13
   },
   {
    "hafta": 8,
    "rakip": "Ege",
-   "booster_oyuncu": "Nigel Hayes-Davis",
-   "kazanc_puan": 0.0,
-   "booster_siz_beklenen": 0.0
+   "booster_oyuncu": "Jean Montero",
+   "kazanc_puan": 0.201,
+   "booster_siz_beklenen": 1.93
   },
   {
    "hafta": 9,
    "rakip": "Kuzey",
-   "booster_oyuncu": "Nigel Hayes-Davis",
-   "kazanc_puan": 0.0,
-   "booster_siz_beklenen": 0.0
+   "booster_oyuncu": "Jean Montero",
+   "kazanc_puan": 0.181,
+   "booster_siz_beklenen": 1.88
   },
   {
    "hafta": 10,
    "rakip": "Efe Sarp",
-   "booster_oyuncu": "Nigel Hayes-Davis",
-   "kazanc_puan": 0.0,
-   "booster_siz_beklenen": 0.0
+   "booster_oyuncu": "Jean Montero",
+   "kazanc_puan": 0.25,
+   "booster_siz_beklenen": 1.59
   },
   {
    "hafta": 11,
    "rakip": "Hamza",
-   "booster_oyuncu": "Nigel Hayes-Davis",
-   "kazanc_puan": 0.0,
-   "booster_siz_beklenen": 0.0
+   "booster_oyuncu": "Jean Montero",
+   "kazanc_puan": 0.278,
+   "booster_siz_beklenen": 1.51
   }
  ],
  "trades": [
-  {
-   "partner": "Kerem",
-   "give": "Kevin Punter, Nikola Milutinov",
-   "get": "Vasilije Micic, Marcus Carr",
-   "my_gain_season_pts": 5.54,
-   "partner_model_gain": -7.56,
-   "give_pir": 24.1,
-   "get_pir": 22.8
-  },
-  {
-   "partner": "Kerem",
-   "give": "Nikola Milutinov, O'Shae Brissett",
-   "get": "Vasilije Micic, Marcus Carr",
-   "my_gain_season_pts": 5.21,
-   "partner_model_gain": -8.9,
-   "give_pir": 22.9,
-   "get_pir": 22.8
-  },
-  {
-   "partner": "Kerem",
-   "give": "Nigel Hayes-Davis, Kevin Punter",
-   "get": "Vasilije Micic, Marcus Carr",
-   "my_gain_season_pts": 5.16,
-   "partner_model_gain": -5.92,
-   "give_pir": 22.9,
-   "get_pir": 22.8
-  },
-  {
-   "partner": "Kerem",
-   "give": "Kevin Punter, O'Shae Brissett",
-   "get": "Vasilije Micic, Marcus Carr",
-   "my_gain_season_pts": 5.01,
-   "partner_model_gain": -6.52,
-   "give_pir": 23.6,
-   "get_pir": 22.8
-  },
   {
    "partner": "Hamza",
    "give": "Kevin Punter, Nikola Milutinov",
@@ -121,13 +85,13 @@
    "get_pir": 22.3
   },
   {
-   "partner": "Kerem",
+   "partner": "Hamza",
    "give": "Kevin Punter, Nikola Milutinov",
-   "get": "Vasilije Micic, Dan Oturu",
-   "my_gain_season_pts": 4.86,
-   "partner_model_gain": -5.18,
+   "get": "Tyson Etienne, Andres Feliz",
+   "my_gain_season_pts": 4.84,
+   "partner_model_gain": -5.86,
    "give_pir": 24.1,
-   "get_pir": 23.4
+   "get_pir": 23.6
   },
   {
    "partner": "Mali",
@@ -139,15 +103,6 @@
    "get_pir": 22.3
   },
   {
-   "partner": "Hamza",
-   "give": "Kevin Punter, Nikola Milutinov",
-   "get": "Tyson Etienne, Andres Feliz",
-   "my_gain_season_pts": 4.84,
-   "partner_model_gain": -5.86,
-   "give_pir": 24.1,
-   "get_pir": 23.6
-  },
-  {
    "partner": "Mali",
    "give": "Bonzie Colson, Kevarrius Hayes",
    "get": "Wade Baldwin IV, David DeJulius",
@@ -155,11 +110,56 @@
    "partner_model_gain": -5.24,
    "give_pir": 17.3,
    "get_pir": 15.8
+  },
+  {
+   "partner": "Gürdal",
+   "give": "Kevin Punter, Nikola Milutinov",
+   "get": "Carlik Jones, Tyrese Martin",
+   "my_gain_season_pts": 4.76,
+   "partner_model_gain": -7.72,
+   "give_pir": 24.1,
+   "get_pir": 23.4
+  },
+  {
+   "partner": "Mali",
+   "give": "Bonzie Colson, Lamar Stevens",
+   "get": "Wade Baldwin IV, David DeJulius",
+   "my_gain_season_pts": 4.67,
+   "partner_model_gain": -5.05,
+   "give_pir": 16.8,
+   "get_pir": 15.8
+  },
+  {
+   "partner": "Efe Sarp",
+   "give": "Nikola Milutinov, Lamar Stevens",
+   "get": "Codi Miller-McIntyre, Braxton Key",
+   "my_gain_season_pts": 4.66,
+   "partner_model_gain": -6.05,
+   "give_pir": 19.2,
+   "get_pir": 19.1
+  },
+  {
+   "partner": "Efe Sarp",
+   "give": "Nikola Milutinov, Kevarrius Hayes",
+   "get": "Codi Miller-McIntyre, Braxton Key",
+   "my_gain_season_pts": 4.66,
+   "partner_model_gain": -6.19,
+   "give_pir": 19.7,
+   "get_pir": 19.1
+  },
+  {
+   "partner": "Efe Sarp",
+   "give": "Nikola Milutinov, Bonzie Colson",
+   "get": "Codi Miller-McIntyre, Braxton Key",
+   "my_gain_season_pts": 4.66,
+   "partner_model_gain": -6.04,
+   "give_pir": 21.1,
+   "get_pir": 19.1
   }
  ],
  "free_agents": [
   {
-   "player": "JAMES, MIKE",
+   "player": "Mike James",
    "team": "IST",
    "drop": "Lamar Stevens",
    "my_gain_season_pts": 0.63,
@@ -169,7 +169,7 @@
    "min": 27.5
   },
   {
-   "player": "SLEVA, DUSTIN",
+   "player": "Dustin Sleva",
    "team": "ZAL",
    "drop": "Lamar Stevens",
    "my_gain_season_pts": 0.38,
@@ -179,7 +179,7 @@
    "min": 21.3
   },
   {
-   "player": "SAKO, NEAL",
+   "player": "Neal Sako",
    "team": "PAM",
    "drop": "Lamar Stevens",
    "my_gain_season_pts": 0.14,
@@ -189,7 +189,7 @@
    "min": 15.9
   },
   {
-   "player": "OSETKOWSKI, DYLAN",
+   "player": "Dylan Osetkowski",
    "team": "PAM",
    "drop": "Lamar Stevens",
    "my_gain_season_pts": 0.01,
