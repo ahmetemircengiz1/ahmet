@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 .venv/
 data/human_factors.json
+data/trade_eval*.json
