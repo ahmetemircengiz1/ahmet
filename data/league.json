@@ -876,22 +876,6 @@
    ]
   ]
  },
- "human_factors": {
-  "no_trade_partners": [
-   "Kerem"
-  ],
-  "premium_partners": {
-   "Gürdal": "aç gözlü, değerinden fazlasını ister",
-   "Ege": "aç gözlü, değerinden fazlasını ister"
-  },
-  "premium_factor": {
-   "Gürdal": 1.15,
-   "Ege": 1.15
-  },
-  "default_partners": "Diğerleriyle normal takas yapılabilir",
-  "untradeable_players": {},
-  "notes": []
- },
  "fixture_note": "11 haftalık round-robin döngüsü; H23-H31 ekran görüntüleriyle kontrol edildi",
  "standings_after_week6": [
   {
@@ -1038,5 +1022,8 @@
   "H1-11": "kullanılmadı (H11 sonuna kadar kullanılmalı)",
   "H12-22": "kilitli",
   "H23-31": "kilitli"
+ },
+ "human_factors": {
+  "note": "Gizli: GitHub secret HUMAN_FACTORS ve yerel data/human_factors.json içinde tutulur"
  }
 }

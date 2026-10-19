@@ -42,4 +42,4 @@ jobs:
           git config user.email "fantasy-bot@users.noreply.github.com"
           git add data reports
           git diff --cached --quiet || git commit -m "Haftalik veri ve rapor"
-          git push
+          git pull --rebase origin main && git push
