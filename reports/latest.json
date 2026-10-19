@@ -1,0 +1,202 @@
+{
+ "week": 7,
+ "opponent": "Kerem",
+ "lineup": {
+  "kaptan": "Nigel Hayes-Davis",
+  "ilk5": [
+   "Nigel Hayes-Davis",
+   "Kevin Punter",
+   "Jean Montero",
+   "Nikola Milutinov",
+   "Marjon Beauchamp"
+  ],
+  "6_adam": "Bonzie Colson",
+  "rezerv": "Dwayne Bacon"
+ },
+ "result": {
+  "exp_points": 0.0,
+  "win_prob": 0.0,
+  "cat_probs": {
+   "pts": 0.0,
+   "reb": 0.0,
+   "ast": 0.0
+  },
+  "dist": {
+   "0": 1.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0
+  }
+ },
+ "booster_plan": [
+  {
+   "hafta": 7,
+   "rakip": "Kerem",
+   "booster_oyuncu": "Nigel Hayes-Davis",
+   "kazanc_puan": 0.0,
+   "booster_siz_beklenen": 0.0
+  },
+  {
+   "hafta": 8,
+   "rakip": "Ege",
+   "booster_oyuncu": "Nigel Hayes-Davis",
+   "kazanc_puan": 0.0,
+   "booster_siz_beklenen": 0.0
+  },
+  {
+   "hafta": 9,
+   "rakip": "Kuzey",
+   "booster_oyuncu": "Nigel Hayes-Davis",
+   "kazanc_puan": 0.0,
+   "booster_siz_beklenen": 0.0
+  },
+  {
+   "hafta": 10,
+   "rakip": "Efe Sarp",
+   "booster_oyuncu": "Nigel Hayes-Davis",
+   "kazanc_puan": 0.0,
+   "booster_siz_beklenen": 0.0
+  },
+  {
+   "hafta": 11,
+   "rakip": "Hamza",
+   "booster_oyuncu": "Nigel Hayes-Davis",
+   "kazanc_puan": 0.0,
+   "booster_siz_beklenen": 0.0
+  }
+ ],
+ "trades": [
+  {
+   "partner": "Kerem",
+   "give": "Kevin Punter, Nikola Milutinov",
+   "get": "Vasilije Micic, Marcus Carr",
+   "my_gain_season_pts": 5.54,
+   "partner_model_gain": -7.56,
+   "give_pir": 24.1,
+   "get_pir": 22.8
+  },
+  {
+   "partner": "Kerem",
+   "give": "Nikola Milutinov, O'Shae Brissett",
+   "get": "Vasilije Micic, Marcus Carr",
+   "my_gain_season_pts": 5.21,
+   "partner_model_gain": -8.9,
+   "give_pir": 22.9,
+   "get_pir": 22.8
+  },
+  {
+   "partner": "Kerem",
+   "give": "Nigel Hayes-Davis, Kevin Punter",
+   "get": "Vasilije Micic, Marcus Carr",
+   "my_gain_season_pts": 5.16,
+   "partner_model_gain": -5.92,
+   "give_pir": 22.9,
+   "get_pir": 22.8
+  },
+  {
+   "partner": "Kerem",
+   "give": "Kevin Punter, O'Shae Brissett",
+   "get": "Vasilije Micic, Marcus Carr",
+   "my_gain_season_pts": 5.01,
+   "partner_model_gain": -6.52,
+   "give_pir": 23.6,
+   "get_pir": 22.8
+  },
+  {
+   "partner": "Hamza",
+   "give": "Kevin Punter, Nikola Milutinov",
+   "get": "Elie Okobo, Tyson Etienne",
+   "my_gain_season_pts": 4.88,
+   "partner_model_gain": -6.3,
+   "give_pir": 24.1,
+   "get_pir": 24.0
+  },
+  {
+   "partner": "Mali",
+   "give": "Kevin Punter, Umoja Gibson",
+   "get": "Wade Baldwin IV, Evan Fournier",
+   "my_gain_season_pts": 4.88,
+   "partner_model_gain": -6.02,
+   "give_pir": 22.6,
+   "get_pir": 22.3
+  },
+  {
+   "partner": "Kerem",
+   "give": "Kevin Punter, Nikola Milutinov",
+   "get": "Vasilije Micic, Dan Oturu",
+   "my_gain_season_pts": 4.86,
+   "partner_model_gain": -5.18,
+   "give_pir": 24.1,
+   "get_pir": 23.4
+  },
+  {
+   "partner": "Mali",
+   "give": "Kevin Punter, Nikola Milutinov",
+   "get": "Wade Baldwin IV, Evan Fournier",
+   "my_gain_season_pts": 4.84,
+   "partner_model_gain": -7.11,
+   "give_pir": 24.1,
+   "get_pir": 22.3
+  },
+  {
+   "partner": "Hamza",
+   "give": "Kevin Punter, Nikola Milutinov",
+   "get": "Tyson Etienne, Andres Feliz",
+   "my_gain_season_pts": 4.84,
+   "partner_model_gain": -5.86,
+   "give_pir": 24.1,
+   "get_pir": 23.6
+  },
+  {
+   "partner": "Mali",
+   "give": "Bonzie Colson, Kevarrius Hayes",
+   "get": "Wade Baldwin IV, David DeJulius",
+   "my_gain_season_pts": 4.78,
+   "partner_model_gain": -5.24,
+   "give_pir": 17.3,
+   "get_pir": 15.8
+  }
+ ],
+ "free_agents": [
+  {
+   "player": "JAMES, MIKE",
+   "team": "IST",
+   "drop": "Lamar Stevens",
+   "my_gain_season_pts": 0.63,
+   "pts": 14.8,
+   "reb": 2.9,
+   "ast": 5.2,
+   "min": 27.5
+  },
+  {
+   "player": "SLEVA, DUSTIN",
+   "team": "ZAL",
+   "drop": "Lamar Stevens",
+   "my_gain_season_pts": 0.38,
+   "pts": 7.1,
+   "reb": 4.2,
+   "ast": 1.1,
+   "min": 21.3
+  },
+  {
+   "player": "SAKO, NEAL",
+   "team": "PAM",
+   "drop": "Lamar Stevens",
+   "my_gain_season_pts": 0.14,
+   "pts": 5.2,
+   "reb": 4.7,
+   "ast": 0.9,
+   "min": 15.9
+  },
+  {
+   "player": "OSETKOWSKI, DYLAN",
+   "team": "PAM",
+   "drop": "Lamar Stevens",
+   "my_gain_season_pts": 0.01,
+   "pts": 6.8,
+   "reb": 3.7,
+   "ast": 1.0,
+   "min": 19.7
+  }
+ ]
+}
