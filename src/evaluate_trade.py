@@ -28,8 +28,8 @@ import run_weekly as rw  # noqa: E402
 DATA = rw.DATA
 
 
-def evaluate(partner, give, get, from_week, to_week, sims=1500, offline=True):
-    league = json.loads((DATA / "league.json").read_text())
+def evaluate(partner, give, get, from_week, to_week, sims=1500, offline=True, league=None, verbose=True):
+    league = league or json.loads((DATA / "league.json").read_text())
     hf = DATA / "human_factors.json"
     if hf.exists():
         league["human_factors"] = json.loads(hf.read_text())
@@ -72,7 +72,7 @@ def evaluate(partner, give, get, from_week, to_week, sims=1500, offline=True):
                 rec["el_maclari"] = {proj.loc[i, "name_fantasy"]: f"{proj.loc[i, 'team']}-{proj.loc[i, 'opp']}{' (ev)' if proj.loc[i, 'home'] == 1 else ''}"
                                      for i in give_ids + get_ids if i in proj.index}
         rows.append(rec)
-        print(f"H{w}: ben {rec['ben_once']:.2f}->{rec['ben_sonra']:.2f} vs {rec['ben_rakip']} | "
+        if verbose: print(f"H{w}: ben {rec['ben_once']:.2f}->{rec['ben_sonra']:.2f} vs {rec['ben_rakip']} | "
               f"{partner} {rec['o_once']:.2f}->{rec['o_sonra']:.2f}", flush=True)
 
     gen = rw.attach_fantasy_names(model.project_generic(ctx), rep)
