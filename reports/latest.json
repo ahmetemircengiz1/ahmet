@@ -1,6 +1,6 @@
 {
- "week": 7,
- "opponent": "Kerem",
+ "week": 8,
+ "opponent": "Ege",
  "lineup": {
   "kaptan": "Jean Montero",
   "ilk5": [
@@ -8,195 +8,218 @@
    "Nigel Hayes-Davis",
    "Kevin Punter",
    "Jean Montero",
-   "Umoja Gibson"
+   "Kevarrius Hayes"
   ],
-  "6_adam": "O'Shae Brissett",
-  "rezerv": "Nikola Milutinov"
+  "6_adam": "Umoja Gibson",
+  "rezerv": "Marjon Beauchamp"
  },
  "result": {
-  "exp_points": 1.131,
-  "win_prob": 0.30966666666666665,
+  "exp_points": 1.9906666666666666,
+  "win_prob": 0.769,
   "cat_probs": {
-   "pts": 0.648,
-   "reb": 0.162,
-   "ast": 0.321
+   "pts": 0.907,
+   "reb": 0.336,
+   "ast": 0.748
   },
   "dist": {
-   "0": 0.22,
-   "1": 0.4703333333333333,
-   "2": 0.2683333333333333,
-   "3": 0.04133333333333333
+   "0": 0.025333333333333333,
+   "1": 0.20566666666666666,
+   "2": 0.522,
+   "3": 0.247
   }
  },
  "booster_plan": [
   {
-   "hafta": 7,
-   "rakip": "Kerem",
-   "booster_oyuncu": "Jean Montero",
-   "kazanc_puan": 0.278,
-   "booster_siz_beklenen": 1.13
-  },
-  {
    "hafta": 8,
    "rakip": "Ege",
    "booster_oyuncu": "Jean Montero",
-   "kazanc_puan": 0.201,
-   "booster_siz_beklenen": 1.93
+   "kazanc_puan": 0.171,
+   "booster_siz_beklenen": 1.99
   },
   {
    "hafta": 9,
    "rakip": "Kuzey",
    "booster_oyuncu": "Jean Montero",
    "kazanc_puan": 0.181,
-   "booster_siz_beklenen": 1.88
+   "booster_siz_beklenen": 1.52
   },
   {
    "hafta": 10,
    "rakip": "Efe Sarp",
    "booster_oyuncu": "Jean Montero",
-   "kazanc_puan": 0.25,
-   "booster_siz_beklenen": 1.59
+   "kazanc_puan": 0.256,
+   "booster_siz_beklenen": 1.23
   },
   {
    "hafta": 11,
    "rakip": "Hamza",
    "booster_oyuncu": "Jean Montero",
-   "kazanc_puan": 0.278,
-   "booster_siz_beklenen": 1.51
+   "kazanc_puan": 0.25,
+   "booster_siz_beklenen": 1.64
   }
  ],
  "trades": [
   {
-   "partner": "Hamza",
-   "give": "Kevin Punter, Nikola Milutinov",
-   "get": "Elie Okobo, Tyson Etienne",
-   "my_gain_season_pts": 4.88,
-   "partner_model_gain": -6.3,
-   "give_pir": 24.1,
-   "get_pir": 24.0
-  },
-  {
-   "partner": "Mali",
-   "give": "Kevin Punter, Umoja Gibson",
-   "get": "Wade Baldwin IV, Evan Fournier",
-   "my_gain_season_pts": 4.88,
-   "partner_model_gain": -6.02,
-   "give_pir": 22.6,
-   "get_pir": 22.3
-  },
-  {
-   "partner": "Hamza",
-   "give": "Kevin Punter, Nikola Milutinov",
-   "get": "Tyson Etienne, Andres Feliz",
-   "my_gain_season_pts": 4.84,
-   "partner_model_gain": -5.86,
-   "give_pir": 24.1,
-   "get_pir": 23.6
-  },
-  {
-   "partner": "Mali",
-   "give": "Kevin Punter, Nikola Milutinov",
-   "get": "Wade Baldwin IV, Evan Fournier",
-   "my_gain_season_pts": 4.84,
-   "partner_model_gain": -7.11,
-   "give_pir": 24.1,
-   "get_pir": 22.3
-  },
-  {
-   "partner": "Mali",
-   "give": "Bonzie Colson, Kevarrius Hayes",
-   "get": "Wade Baldwin IV, David DeJulius",
-   "my_gain_season_pts": 4.78,
-   "partner_model_gain": -5.24,
-   "give_pir": 17.3,
-   "get_pir": 15.8
+   "partner": "Gürdal",
+   "give": "Bonzie Colson, Umoja Gibson",
+   "get": "Carlik Jones, Tyson Carter",
+   "my_gain_season_pts": 6.28,
+   "partner_model_gain": -9.24,
+   "give_pir": 21.6,
+   "get_pir": 21.5
   },
   {
    "partner": "Gürdal",
    "give": "Kevin Punter, Nikola Milutinov",
-   "get": "Carlik Jones, Tyrese Martin",
-   "my_gain_season_pts": 4.76,
-   "partner_model_gain": -7.72,
-   "give_pir": 24.1,
-   "get_pir": 23.4
+   "get": "Carlik Jones, Alessandro Pajola",
+   "my_gain_season_pts": 6.07,
+   "partner_model_gain": -8.36,
+   "give_pir": 26.0,
+   "get_pir": 25.0
   },
   {
-   "partner": "Mali",
-   "give": "Bonzie Colson, Lamar Stevens",
-   "get": "Wade Baldwin IV, David DeJulius",
-   "my_gain_season_pts": 4.67,
-   "partner_model_gain": -5.05,
-   "give_pir": 16.8,
-   "get_pir": 15.8
+   "partner": "Gürdal",
+   "give": "Bonzie Colson, Kevarrius Hayes",
+   "get": "Carlik Jones, Tyson Carter",
+   "my_gain_season_pts": 6.06,
+   "partner_model_gain": -9.26,
+   "give_pir": 21.8,
+   "get_pir": 21.5
+  },
+  {
+   "partner": "Gürdal",
+   "give": "Dwayne Bacon, Nikola Milutinov",
+   "get": "Carlik Jones, Alessandro Pajola",
+   "my_gain_season_pts": 5.98,
+   "partner_model_gain": -8.53,
+   "give_pir": 25.2,
+   "get_pir": 25.0
+  },
+  {
+   "partner": "Gürdal",
+   "give": "Bonzie Colson, O'Shae Brissett",
+   "get": "Carlik Jones, Tyson Carter",
+   "my_gain_season_pts": 5.97,
+   "partner_model_gain": -9.18,
+   "give_pir": 22.1,
+   "get_pir": 21.5
+  },
+  {
+   "partner": "Gürdal",
+   "give": "Kevin Punter, Bonzie Colson",
+   "get": "Carlik Jones, Tyson Carter",
+   "my_gain_season_pts": 5.87,
+   "partner_model_gain": -8.58,
+   "give_pir": 24.2,
+   "get_pir": 21.5
+  },
+  {
+   "partner": "Gürdal",
+   "give": "Dwayne Bacon, Bonzie Colson",
+   "get": "Carlik Jones, Tyson Carter",
+   "my_gain_season_pts": 5.87,
+   "partner_model_gain": -8.64,
+   "give_pir": 23.4,
+   "get_pir": 21.5
+  },
+  {
+   "partner": "Gürdal",
+   "give": "Kevin Punter, Nikola Milutinov",
+   "get": "Carlik Jones, Joel Parra",
+   "my_gain_season_pts": 5.81,
+   "partner_model_gain": -8.82,
+   "give_pir": 26.0,
+   "get_pir": 25.9
+  },
+  {
+   "partner": "Gürdal",
+   "give": "Dwayne Bacon, Kevin Punter",
+   "get": "Carlik Jones, Alessandro Pajola",
+   "my_gain_season_pts": 5.74,
+   "partner_model_gain": -7.93,
+   "give_pir": 25.1,
+   "get_pir": 25.0
   },
   {
    "partner": "Efe Sarp",
-   "give": "Nikola Milutinov, Lamar Stevens",
-   "get": "Codi Miller-McIntyre, Braxton Key",
-   "my_gain_season_pts": 4.66,
-   "partner_model_gain": -6.05,
-   "give_pir": 19.2,
-   "get_pir": 19.1
-  },
-  {
-   "partner": "Efe Sarp",
-   "give": "Nikola Milutinov, Kevarrius Hayes",
-   "get": "Codi Miller-McIntyre, Braxton Key",
-   "my_gain_season_pts": 4.66,
-   "partner_model_gain": -6.19,
-   "give_pir": 19.7,
-   "get_pir": 19.1
-  },
-  {
-   "partner": "Efe Sarp",
-   "give": "Nikola Milutinov, Bonzie Colson",
-   "get": "Codi Miller-McIntyre, Braxton Key",
-   "my_gain_season_pts": 4.66,
-   "partner_model_gain": -6.04,
-   "give_pir": 21.1,
-   "get_pir": 19.1
+   "give": "Bonzie Colson, Garrison Mathews",
+   "get": "Codi Miller-McIntyre, Jared Rhoden",
+   "my_gain_season_pts": 5.73,
+   "partner_model_gain": -6.26,
+   "give_pir": 19.1,
+   "get_pir": 18.5
   }
  ],
  "free_agents": [
   {
+   "player": "Neal Sako",
+   "team": "PAM",
+   "drop": "Marjon Beauchamp",
+   "my_gain_season_pts": 0.29,
+   "pts": 5.7,
+   "reb": 5.0,
+   "ast": 0.9,
+   "min": 16.6
+  },
+  {
    "player": "Mike James",
    "team": "IST",
-   "drop": "Lamar Stevens",
-   "my_gain_season_pts": 0.63,
+   "drop": "Marjon Beauchamp",
+   "my_gain_season_pts": 0.27,
    "pts": 14.8,
    "reb": 2.9,
    "ast": 5.2,
    "min": 27.5
   },
   {
-   "player": "Dustin Sleva",
-   "team": "ZAL",
-   "drop": "Lamar Stevens",
-   "my_gain_season_pts": 0.38,
-   "pts": 7.1,
-   "reb": 4.2,
-   "ast": 1.1,
-   "min": 21.3
-  },
-  {
-   "player": "Neal Sako",
-   "team": "PAM",
-   "drop": "Lamar Stevens",
-   "my_gain_season_pts": 0.14,
-   "pts": 5.2,
-   "reb": 4.7,
-   "ast": 0.9,
-   "min": 15.9
-  },
-  {
-   "player": "Dylan Osetkowski",
-   "team": "PAM",
-   "drop": "Lamar Stevens",
-   "my_gain_season_pts": 0.01,
-   "pts": 6.8,
-   "reb": 3.7,
+   "player": "Oscar Da Silva",
+   "team": "MUN",
+   "drop": "Marjon Beauchamp",
+   "my_gain_season_pts": 0.22,
+   "pts": 8.9,
+   "reb": 3.8,
    "ast": 1.0,
-   "min": 19.7
+   "min": 20.6
+  },
+  {
+   "player": "Johannes Voigtmann",
+   "team": "MUN",
+   "drop": "Marjon Beauchamp",
+   "my_gain_season_pts": 0.18,
+   "pts": 4.9,
+   "reb": 4.3,
+   "ast": 2.4,
+   "min": 16.8
+  },
+  {
+   "player": "Sebastian Herrera",
+   "team": "PRS",
+   "drop": "Marjon Beauchamp",
+   "my_gain_season_pts": 0.11,
+   "pts": 10.0,
+   "reb": 1.9,
+   "ast": 1.8,
+   "min": 21.9
+  },
+  {
+   "player": "Darius Thompson",
+   "team": "MIL",
+   "drop": "Marjon Beauchamp",
+   "my_gain_season_pts": 0.1,
+   "pts": 7.9,
+   "reb": 1.5,
+   "ast": 3.0,
+   "min": 19.4
+  },
+  {
+   "player": "Chuma Okeke",
+   "team": "MAD",
+   "drop": "Marjon Beauchamp",
+   "my_gain_season_pts": 0.03,
+   "pts": 7.2,
+   "reb": 3.5,
+   "ast": 1.0,
+   "min": 19.4
   }
  ]
 }
